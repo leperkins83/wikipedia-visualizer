@@ -3,30 +3,63 @@ body {
     background-color: #023a33;
 }
 
+.welcome h1 {
+    display: block;
+    text-align: center;
+    margin: 50px auto 20px auto;
+    color: #b042f4;
+    text-shadow: 10px 15px #021911;
+    font-size: 30px;
+    font-family: 'Kumar One', cursive;
+    max-width: 80vw;
+    line-height: 2.5;
+}
+
 .searchBox {
+    background-color: #dcedbd;
     border-radius: 15px;
     border-width: 10px;
     border-color: #b042f4;
     display: block;
-    margin: 50px auto 0 auto;
+    margin: 25px auto 0 auto;
     width: 300px;
     height: 45px;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Kumar One', cursive;
     padding-top: 5px;
+}
+
+.odinOneEyed {
+    display: block;
+    margin: 20px auto 0 auto;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #79b705;
+    max-width: 290px;
 }
 
 .searchBox:focus {
     outline: none;
 }
 
-.searchButton {
-    display: block;
-    margin: 20px auto 0 auto;
-    border-radius: 5px;
-    width: 70px;
-    height: 36px;
+.centerButtons {
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 0;
+}
+
+.searchButton,
+.randomButton {
+    background-color: #dcedbd;
+    display: inline-block;
+    margin: 0 10px;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: #b042f4;
+    padding: 5px 10px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -36,12 +69,18 @@ body {
     margin: 25px auto 40px auto;
     border-radius: 15px;
     border-style: solid;
-    border-width: medium;
+    border-width: thick;
     border-color: #79b705;
     background-color: #dcedbd;
     padding-left: 65px;
     padding-right: 20px;
-    max-width: 80vw;
+    max-width: 60vw;
+}
+
+@media all and (max-width: 414px) {
+    .article {
+        padding-left: 15px;
+    }
 }
 
 .article:hover {
@@ -50,6 +89,10 @@ body {
     border-left-color: #b042f4;
 }
 
-.article: title {
+.articlesContainer a {
+    color: #a234d1;
+}
 
+.articlesContainer a:visited {
+    color: #023a33;
 }
